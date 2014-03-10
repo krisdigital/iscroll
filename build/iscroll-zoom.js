@@ -768,6 +768,9 @@ IScroll.prototype = {
 
 		var pos = utils.offset(el);
 
+    pos.left *= this.scale;
+    pos.top *= this.scale;
+
 		pos.left -= this.wrapperOffset.left;
 		pos.top  -= this.wrapperOffset.top;
 
